@@ -79,7 +79,7 @@ export default class SearchBar extends React.Component {
     return (
       <form onSubmit={(evt) => evt.preventDefault()} className="navbar-form navbar-left" role="search">
         <div className="input-group">
-          <input type="text" className="form-control fb-search" placeholder="Search Facebook" value={this.state.searchTerm} onChange={(e) => this.handleChange(e)} onKeyUp={(e) => this.handleKeyUp(e)}  />
+          <input type="text" className="form-control fb-search" placeholder="Search Steam Database" value={this.state.searchTerm} onChange={(e) => this.handleChange(e)} onKeyUp={(e) => this.handleKeyUp(e)}  />
           <span className="input-group-btn">
             <button type="button" className="btn btn-default" onClick={(e) => this.handleSearchButtonClick(e)}>
               <span className="glyphicon glyphicon-search"></span>
